@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd \"C:/Users/aktar/neighbor-abroad\" && npm install 2>&1)",
+      "Bash(cd C:/Users/aktar/neighbor-abroad && npm run build 2>&1 | tail -30)",
+      "Bash(cd C:/Users/aktar/neighbor-abroad && npm run build 2>&1 | tail -40)",
+      "Bash(cd C:/Users/aktar/neighbor-abroad && npm run build 2>&1 | tail -20)",
+      "Bash(grep -n \"use\\(params\\)\\\\|Promise<{ hub\" C:/Users/aktar/neighbor-abroad/app/\\\\[hub\\\\]/commons/page.tsx C:/Users/aktar/neighbor-abroad/app/\\\\[hub\\\\]/meetups/page.tsx C:/Users/aktar/neighbor-abroad/app/\\\\[hub\\\\]/city-guide/page.tsx C:/Users/aktar/neighbor-abroad/app/\\\\[hub\\\\]/profile/page.tsx C:/Users/aktar/neighbor-abroad/app/\\\\[hub\\\\]/discover/page.tsx)",
+      "Bash(cd C:/Users/aktar/neighbor-abroad && \\\\\nsed -i 's/params: Promise<{ hub: string }>/params: { hub: string }/g' app/\\\\[hub\\\\]/commons/page.tsx app/\\\\[hub\\\\]/meetups/page.tsx app/\\\\[hub\\\\]/city-guide/page.tsx app/\\\\[hub\\\\]/profile/page.tsx app/\\\\[hub\\\\]/discover/page.tsx && \\\\\nsed -i 's/const { hub } = use\\(params\\)/const { hub } = params/g' app/\\\\[hub\\\\]/commons/page.tsx app/\\\\[hub\\\\]/meetups/page.tsx app/\\\\[hub\\\\]/city-guide/page.tsx app/\\\\[hub\\\\]/profile/page.tsx app/\\\\[hub\\\\]/discover/page.tsx)",
+      "Bash(grep -n \"^import { use,\" C:/Users/aktar/neighbor-abroad/app/\\\\[hub\\\\]/commons/page.tsx C:/Users/aktar/neighbor-abroad/app/\\\\[hub\\\\]/meetups/page.tsx C:/Users/aktar/neighbor-abroad/app/\\\\[hub\\\\]/city-guide/page.tsx C:/Users/aktar/neighbor-abroad/app/\\\\[hub\\\\]/profile/page.tsx C:/Users/aktar/neighbor-abroad/app/\\\\[hub\\\\]/discover/page.tsx)",
+      "Bash(cd C:/Users/aktar/neighbor-abroad && \\\\\nsed -i 's/import { use, useEffect, useState, useCallback }/import { useEffect, useState, useCallback }/g' app/\\\\[hub\\\\]/commons/page.tsx app/\\\\[hub\\\\]/meetups/page.tsx app/\\\\[hub\\\\]/city-guide/page.tsx && \\\\\nsed -i 's/import { use, useEffect, useState }/import { useEffect, useState }/g' app/\\\\[hub\\\\]/profile/page.tsx)",
+      "Bash(head -5 C:/Users/aktar/neighbor-abroad/app/\\\\[hub\\\\]/discover/page.tsx)",
+      "Bash(grep -n \"use\" C:/Users/aktar/neighbor-abroad/app/\\\\[hub\\\\]/discover/page.tsx | head -5)",
+      "Bash(head -25 C:/Users/aktar/neighbor-abroad/app/\\\\[hub\\\\]/commons/page.tsx)"
+    ]
+  }
+}
